@@ -9,13 +9,12 @@ from prompts.schema import EntityTable
 from langgraph.graph import StateGraph, END
 from langchain_openai import ChatOpenAI
 
-# Production Shared Baseline Primitives
+# Baseline Primitives
 from ddgs import DDGS
 from docling.document_converter import DocumentConverter
 
-# ----------------------------------------------------
-# DECOUPLED YAML ENGINE PARAMETERS CONFIG LOADER
-# ----------------------------------------------------
+
+# YAML PARAMETERS CONFIG LOADER
 current_script_dir = os.path.dirname(os.path.abspath(__file__))
 yaml_config_path = os.path.join(current_script_dir, "config.yaml")
 
@@ -30,9 +29,7 @@ else:
     }
 
 
-# ----------------------------------------------------
-# A. PIPELINE STATE DEFINITION
-# ----------------------------------------------------
+# A. STATE DEFINITION
 class HtmlRagState(TypedDict):
     task_query: str
     discovered_urls: List[str]
@@ -40,9 +37,7 @@ class HtmlRagState(TypedDict):
     extracted_table: List[Dict[str, Any]]
 
 
-# ----------------------------------------------------
-# B. STATIC OPERATIONAL BLOCK NODES
-# ----------------------------------------------------
+# B. OPERATIONAL NODES
 def execute_discovery_search(state: HtmlRagState) -> dict:
     """Discovers web resources using Dux Distributed Global Search (DDGS)."""
     query = state["task_query"]
@@ -139,9 +134,8 @@ def direct_inference_extraction(state: HtmlRagState) -> dict:
         return {"extracted_table": []}
 
 
-# ----------------------------------------------------
-# C. PIPELINE GRAPH ASSEMBLER
-# ----------------------------------------------------
+
+# C. GRAPH ASSEMBLER
 def compile_html_rag_baseline():
     workflow = StateGraph(HtmlRagState)
 
