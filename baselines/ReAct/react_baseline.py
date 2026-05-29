@@ -13,13 +13,11 @@ from langgraph.graph import StateGraph, END
 from langchain_core.messages import BaseMessage, HumanMessage
 from langchain_openai import ChatOpenAI
 
-# Production Baseline Tools Stack
+# Tools Stack
 from ddgs import DDGS
 from docling.document_converter import DocumentConverter
 
-# ----------------------------------------------------
-# FIXED PATH-SAFE ENVIRONMENT CONFIGURATION LOADER
-# ----------------------------------------------------
+# ENVIRONMENT CONFIGURATION LOADER
 current_script_dir = os.path.dirname(os.path.abspath(__file__))
 yaml_config_path = os.path.join(current_script_dir, "config.yaml")
 
@@ -48,9 +46,7 @@ class ReActState(TypedDict):
     extracted_table: Annotated[List[Dict[str, Any]], add]
 
 
-# ----------------------------------------------------
 # B. PRIMITIVE TOOLS
-# ----------------------------------------------------
 def run_dux_global_search(query: str, max_results: int) -> str:
     """Uses Dux Distributed Global Search (DDGS) to query across web services."""
     print(f"\n[SEARCH ENGINE] Querying: '{query}'")
@@ -109,9 +105,8 @@ def run_bs4_docling_extractor(url: str) -> List[Dict[str, Any]]:
         return []
 
 
-# ----------------------------------------------------
+
 # C. LANGGRAPH EXECUTION ARCHITECTURE NODES
-# ----------------------------------------------------
 def call_llm_agent(state: ReActState) -> dict:
     current_count = state.get("loop_count", 0) + 1
     prompt_path = os.path.join(current_script_dir, CONFIG["paths"]["prompt_file"])
