@@ -1,0 +1,17 @@
+---
+NOTE: using R3 paper prompt format
+---
+
+Rewrite the following input query into optimized web search engine query string that maximizes web document discovery.
+
+Input Query: Find all dental clinics in British Columbia.
+Rewritten Search Query: dental clinics British Columbia directory listing
+
+Input Query: List of public high schools across Alberta municipalities.
+Rewritten Search Query: registry public high schools Alberta locations
+
+Input Query: Local legal aid services located in Nova Scotia.
+Rewritten Search Query: legal aid clinics Nova Scotia contact list
+
+Input Query: {task_query}
+Rewritten Search Query:

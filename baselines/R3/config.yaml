@@ -1,0 +1,10 @@
+llm:
+  model_name: "gpt-4o-mini"
+  temperature: 0.0
+
+tools:
+  search_max_results: 10
+
+paths:
+  rewrite_prompt_file: "r3_rewrite_prompt.txt"
+  reader_prompt_file: "r3_reader_prompt.txt"

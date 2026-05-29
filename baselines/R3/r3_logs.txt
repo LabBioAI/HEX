@@ -1,0 +1,107 @@
+====== INITIATING SOTA REWRITE-RETRIEVE-READ (R3) EXPERIMENTS RUNNER ======
+
+==================================================
+[RUNNING R3] Task Category: Hospitals
+==================================================
+
+[R3 REWRITE] Inputting original task query: 'Find me all the hospitals located in Ontario.'
+[R3 REWRITE SUCCESS] Reformulated search query payload: 'hospitals Ontario comprehensive list'
+[R3 RETRIEVAL] Issuing global search for: 'hospitals Ontario comprehensive list'
+[R3 RETRIEVAL] Found 10 target candidate URLs.
+[R3 READ & FLATTEN] (1/10) Converting layout files: https://www.businesswire.com/news/home/20260511583264/en/Majority-of-Ontario-hospitals-have-been-operating-in-the-red-over-the-last-three-years-new-report-shows
+[R3 WARNING] Failed to digest URL https://www.businesswire.com/news/home/20260511583264/en/Majority-of-Ontario-hospitals-have-been-operating-in-the-red-over-the-last-three-years-new-report-shows: 403 Client Error: Forbidden for url: https://www.businesswire.com/news/home/20260511583264/en/Majority-of-Ontario-hospitals-have-been-operating-in-the-red-over-the-last-three-years-new-report-shows
+[R3 READ & FLATTEN] (2/10) Converting layout files: https://www.tiktok.com/discover/ontario-hospitals-problem
+[R3 READ & FLATTEN] (3/10) Converting layout files: https://globalnews.ca/news/11855733/new-report-ccpa-ontario-hospitals-deficits/
+[R3 READ & FLATTEN] (4/10) Converting layout files: https://www.cbc.ca/news/canada/sudbury/hospitals-northern-ontario-funding-deficit-wait-times-9.7204789
+[R3 READ & FLATTEN] (5/10) Converting layout files: https://www.canadiancharitylaw.ca/uploads/List_of_Ontario_Non-Profit_Corporations_finally_released_by_Mark_Blumberg.pdf
+An unexpected error occurred while opening the document temp_r3_51940.html
+Traceback (most recent call last):
+  File "/Users/s1mankhan/Desktop/Hex/hex_runs/lib/python3.12/site-packages/docling/datamodel/document.py", line 176, in __init__
+    self._init_doc(backend, path_or_stream)
+  File "/Users/s1mankhan/Desktop/Hex/hex_runs/lib/python3.12/site-packages/docling/datamodel/document.py", line 220, in _init_doc
+    self._backend = backend(self, path_or_stream=path_or_stream)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/s1mankhan/Desktop/Hex/hex_runs/lib/python3.12/site-packages/docling/backend/docling_parse_backend.py", line 231, in __init__
+    self._pdoc = pdfium.PdfDocument(self.path_or_stream, password=password)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/s1mankhan/Desktop/Hex/hex_runs/lib/python3.12/site-packages/pypdfium2/_helpers/document.py", line 76, in __init__
+    self.raw, to_hold, to_close = _open_pdf(self._input, self._password, self._autoclose)
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/s1mankhan/Desktop/Hex/hex_runs/lib/python3.12/site-packages/pypdfium2/_helpers/document.py", line 557, in _open_pdf
+    raise PdfiumError(f"Failed to load document (PDFium: {pdfium_i.ErrorToStr.get(err_code)}).", err_code=err_code)
+pypdfium2._helpers.misc.PdfiumError: Failed to load document (PDFium: Data format error).
+[R3 WARNING] Failed to digest URL https://www.canadiancharitylaw.ca/uploads/List_of_Ontario_Non-Profit_Corporations_finally_released_by_Mark_Blumberg.pdf: Input document temp_r3_51940.html is not valid.
+[R3 READ & FLATTEN] (6/10) Converting layout files: https://www.ctvnews.ca/windsor/article/report-links-rising-windsor-area-er-waits-to-hospital-funding-pressures/
+[R3 READ & FLATTEN] (7/10) Converting layout files: https://health.usnews.com/best-hospitals
+[R3 WARNING] Failed to digest URL https://health.usnews.com/best-hospitals: HTTPSConnectionPool(host='health.usnews.com', port=443): Read timed out. (read timeout=15)
+[R3 READ & FLATTEN] (8/10) Converting layout files: https://soft2share.com/physiotherapy-in-markham-ontario-comprehensive-guide-to-markham-physio-clinics-and-rehabilitation-services/
+[R3 READ & FLATTEN] (9/10) Converting layout files: https://freefrontend.com/css-pagination/
+[R3 READ & FLATTEN] (10/10) Converting layout files: https://www.aberdeennews.com/
+
+[R3 READER] Executing single-turn extraction via schema context map...
+[R3 READER SUCCESS] Successfully parsed 2 elements into table.
+
+[SUMMARY FOR R3 Hospitals]:
+  - Total Raw Records Extracted: 2
+  - Unique Entity Matches: 2
+  - Output Target Path Location: /Users/s1mankhan/Desktop/Hex/evaluation_results/r3_baseline_hospitals.json
+
+==================================================
+[RUNNING R3] Task Category: Community Mental Health
+==================================================
+
+[R3 REWRITE] Inputting original task query: 'Community-based mental health centres in Ontario'
+[R3 REWRITE SUCCESS] Reformulated search query payload: 'mental health centres community Ontario directory'
+[R3 RETRIEVAL] Issuing global search for: 'mental health centres community Ontario directory'
+[R3 RETRIEVAL] Found 10 target candidate URLs.
+[R3 READ & FLATTEN] (1/10) Converting layout files: https://www.ontario.ca/page/mental-health-services
+[R3 READ & FLATTEN] (2/10) Converting layout files: https://connexontario.ca/search/
+[R3 WARNING] Failed to digest URL https://connexontario.ca/search/: 403 Client Error: Forbidden for url: https://connexontario.ca/search/
+[R3 READ & FLATTEN] (3/10) Converting layout files: https://windsoressex.cmha.ca/
+[R3 READ & FLATTEN] (4/10) Converting layout files: https://211ontario.ca/211-topics/mental-health-addictions/community-mental-health-centres/
+[R3 READ & FLATTEN] (5/10) Converting layout files: https://www.ementalhealth.ca/index.php?m=record&ID=10155
+[R3 READ & FLATTEN] (6/10) Converting layout files: https://www.ontariohealth.ca/clinical/mental-health-addictions
+[R3 READ & FLATTEN] (7/10) Converting layout files: https://cmho.org/
+[R3 READ & FLATTEN] (8/10) Converting layout files: https://www.wsib.ca/en/community-mental-health-network-psychologist-directory
+[R3 READ & FLATTEN] (9/10) Converting layout files: https://wechc.org/
+[R3 READ & FLATTEN] (10/10) Converting layout files: /clev?event=StartpageResultClick&sc=5mZRtno4HvzFVOr6SbHXtmaK1lLCUoXoghcaHqKvD0woCOph2pZ4b1rwPl1eOtHJaWaQbTqunV6Lr&payload={"bdsSessionId":"","cheqId":"","countryCode":"CA","deviceType":"mobile","endpoint":"search.serp","hasGoogleAds":false,"queryCategory":"web","segment":"organic","surface":"serp-web","transport":"href-request"}
+[R3 WARNING] Failed to digest URL /clev?event=StartpageResultClick&sc=5mZRtno4HvzFVOr6SbHXtmaK1lLCUoXoghcaHqKvD0woCOph2pZ4b1rwPl1eOtHJaWaQbTqunV6Lr&payload={"bdsSessionId":"","cheqId":"","countryCode":"CA","deviceType":"mobile","endpoint":"search.serp","hasGoogleAds":false,"queryCategory":"web","segment":"organic","surface":"serp-web","transport":"href-request"}: No connection adapters were found for '/clev?event=StartpageResultClick&sc=5mZRtno4HvzFVOr6SbHXtmaK1lLCUoXoghcaHqKvD0woCOph2pZ4b1rwPl1eOtHJaWaQbTqunV6Lr&payload={"bdsSessionId":"","cheqId":"","countryCode":"CA","deviceType":"mobile","endpoint":"search.serp","hasGoogleAds":false,"queryCategory":"web","segment":"organic","surface":"serp-web","transport":"href-request"}'
+
+[R3 READER] Executing single-turn extraction via schema context map...
+[R3 READER SUCCESS] Successfully parsed 10 elements into table.
+
+[SUMMARY FOR R3 Community Mental Health]:
+  - Total Raw Records Extracted: 10
+  - Unique Entity Matches: 10
+  - Output Target Path Location: /Users/s1mankhan/Desktop/Hex/evaluation_results/r3_baseline_mental_health.json
+
+==================================================
+[RUNNING R3] Task Category: Addiction treatment
+==================================================
+
+[R3 REWRITE] Inputting original task query: 'Retrieve all addiction treatment centres in the Ontario.'
+[R3 REWRITE SUCCESS] Reformulated search query payload: 'addiction treatment centers Ontario directory'
+[R3 RETRIEVAL] Issuing global search for: 'addiction treatment centers Ontario directory'
+[R3 RETRIEVAL] Found 10 target candidate URLs.
+[R3 READ & FLATTEN] (1/10) Converting layout files: http://www.findtreatment.ca/
+[R3 READ & FLATTEN] (2/10) Converting layout files: https://www.psychologytoday.com/ca/treatment-rehab/ontario?category=addiction
+[R3 READ & FLATTEN] (3/10) Converting layout files: https://www.canadadrugrehab.ca/ontario/
+[R3 WARNING] Failed to digest URL https://www.canadadrugrehab.ca/ontario/: 403 Client Error: Forbidden for url: https://www.canadadrugrehab.ca/ontario/
+[R3 READ & FLATTEN] (4/10) Converting layout files: https://dnntest.connexontario.ca/en-ca/organizations
+[R3 READ & FLATTEN] (5/10) Converting layout files: https://canatc.ca/locations/
+[R3 READ & FLATTEN] (6/10) Converting layout files: https://www.ontarioshores.ca/resources-support/self-help-resources/addictions-concurrent-disorders-resources-and-support/addictions-treatment-and-recovery-centres-ontario
+[R3 READ & FLATTEN] (7/10) Converting layout files: https://www.drugrehab.ca/opioids-rehabs-ontario.html
+[R3 WARNING] Failed to digest URL https://www.drugrehab.ca/opioids-rehabs-ontario.html: 403 Client Error: Forbidden for url: https://www.drugrehab.ca/opioids-rehabs-ontario.html
+[R3 READ & FLATTEN] (8/10) Converting layout files: https://recoverycentres.ca/publicly-funded-drug-rehabs-in-toronto-covered-by-ohip/
+[R3 READ & FLATTEN] (9/10) Converting layout files: https://recovery.com/ontario/outpatient/
+[R3 READ & FLATTEN] (10/10) Converting layout files: https://www.metaphi.ca/raam-clinics/
+
+[R3 READER] Executing single-turn extraction via schema context map...
+[R3 READER SUCCESS] Successfully parsed 14 elements into table.
+
+[SUMMARY FOR R3 Addiction treatment]:
+  - Total Raw Records Extracted: 14
+  - Unique Entity Matches: 14
+  - Output Target Path Location: /Users/s1mankhan/Desktop/Hex/evaluation_results/r3_baseline_addiction.json
+
+====== ALL R3 BASELINE EVALUATION CORPUS CHECKS COMPLETE ======
