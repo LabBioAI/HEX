@@ -1,1 +1,20 @@
+model_settings:
+  model_name: "gpt-4o-mini" # reasoning engine for AI agent
+  temperature: 0
+
+node2_settings:
+  limit: 5       # Depth of Knowledge Graph
+
+# Search Engine Parameters
+ddgs_settings:
+  max_results: 5
+  region: "ca-en"
+  safesearch: "moderate"
+  timelimit: "y"
+  backend: "google"
+
+# Node 4 Memory & Storage
+node4_storage:
+  memory_dir: "url_memory" # Change file names according to your requirements.
+  markdown_dir: "retrieved_markdowns"
 
