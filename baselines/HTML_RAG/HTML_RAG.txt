@@ -1,0 +1,113 @@
+====== INITIATING HTML-RAG UNIVERSAL DECOUPLED EXPERIMENTS RUNNER ======
+
+
+==================================================
+[RUNNING HTML-RAG] Task Category: Hospitals
+==================================================
+
+[HTML-RAG DISCOVERY] Issuing search for macro query: 'Find me all the hospitals located in Ontario.'
+[HTML-RAG DISCOVERY] Found 10 target candidate URLs.
+[HTML-RAG FETCH & CONVERT] (1/10) Processing: https://en.wikipedia.org/wiki/List_of_hospitals_in_Canada
+[DOCLING CONVERTER] Generating layout-preserved structural markdown...
+Clashing hyperlinks: '/wiki/Toronto' and '/wiki/Hospital_for_Sick_Children_(Toronto)'! Chose '/wiki/Hospital_for_Sick_Children_(Toronto)'
+[HTML-RAG FETCH & CONVERT] (2/10) Processing: https://en.wikipedia.org/wiki/List_of_hospitals_in_Toronto
+[DOCLING CONVERTER] Generating layout-preserved structural markdown...
+[HTML-RAG FETCH & CONVERT] (3/10) Processing: https://en.wikipedia.org/wiki/Category:Hospitals_in_Ontario
+[DOCLING CONVERTER] Generating layout-preserved structural markdown...
+[HTML-RAG FETCH & CONVERT] (4/10) Processing: https://www.ontario.ca/page/general-hospital-locations
+[DOCLING CONVERTER] Generating layout-preserved structural markdown...
+[HTML-RAG FETCH & CONVERT] (5/10) Processing: https://www.scottsdirectories.com/list-of-hospitals/
+[DOCLING CONVERTER] Generating layout-preserved structural markdown...
+[HTML-RAG FETCH & CONVERT] (6/10) Processing: https://www.scottsdirectories.com/hospitals-directory/
+[DOCLING CONVERTER] Generating layout-preserved structural markdown...
+[HTML-RAG FETCH & CONVERT] (7/10) Processing: https://www.publichealthontario.ca/en/Data-and-Analysis/Commonly-Used-Products/Maps/Health-Services-Locator
+[DOCLING CONVERTER] Generating layout-preserved structural markdown...
+[HTML-RAG FETCH & CONVERT] (8/10) Processing: https://www.gregmonforton.com/windsor/personal-injury-lawyer/hospitals-in-ontario.html
+[DOCLING CONVERTER] Generating layout-preserved structural markdown...
+[HTML-RAG FETCH & CONVERT] (9/10) Processing: https://www.ottawapublichealth.ca/en/public-health-services/hospitals.aspx
+[DOCLING CONVERTER] Generating layout-preserved structural markdown...
+[HTML-RAG FETCH & CONVERT] (10/10) Processing: https://www.yellowpages.ca/business/ON/00681600.html
+[DOCLING CONVERTER] Generating layout-preserved structural markdown...
+[HTML-RAG COMPILATION] Aggregated markdown context footprint length: 240687 characters.
+
+[HTML-RAG INFERENCE] Executing single-turn extraction via schema context map...
+[HTML-RAG INFERENCE SUCCESS] Extracted 30 tabular elements.
+
+[SUMMARY FOR HTML-RAG Hospitals]:
+  - Total Raw Records Extracted: 30
+  - Unique Entity Matches: 29
+  - Output Target Path Location: /Users/s1mankhan/Desktop/Hex/evaluation_results/html_rag_baseline_hospitals.json
+
+==================================================
+[RUNNING HTML-RAG] Task Category: Community Mental Health
+==================================================
+
+[HTML-RAG DISCOVERY] Issuing search for macro query: 'Community-based mental health services in Ontario'
+[HTML-RAG DISCOVERY] Found 10 target candidate URLs.
+[HTML-RAG FETCH & CONVERT] (1/10) Processing: https://www.ontario.ca/page/find-mental-health-support
+[DOCLING CONVERTER] Generating layout-preserved structural markdown...
+[HTML-RAG FETCH & CONVERT] (2/10) Processing: https://www.theglobeandmail.com/life/health-and-fitness/health/ontario-opens-doors-for-troubled-teens/article16204093/
+[DOCLING CONVERTER] Generating layout-preserved structural markdown...
+[HTML-RAG FETCH & CONVERT] (3/10) Processing: https://theinsightclinic.ca/ontarios-mental-health-policy-reforms-whats-changing-for-anxiety-treatment/
+[DOCLING CONVERTER] Generating layout-preserved structural markdown...
+[HTML-RAG FETCH & CONVERT] (4/10) Processing: https://cmho.org/28000-ontario-children-and-youth-are-waiting-for-community-mental-health-services/
+[DOCLING CONVERTER] Generating layout-preserved structural markdown...
+[HTML-RAG FETCH & CONVERT] (5/10) Processing: https://collegeboreal.ca/en/actualite/college-boreal-donates-10000-to-community-based-mental-health/
+[DOCLING CONVERTER] Generating layout-preserved structural markdown...
+[HTML-RAG FETCH & CONVERT] (6/10) Processing: https://www.bridgeable.com/work/transforming-the-mental-health-experiences-of-transitional-aged-youth/
+[DOCLING CONVERTER] Generating layout-preserved structural markdown...
+[HTML-RAG FETCH & CONVERT] (7/10) Processing: https://www.amo.on.ca/policy/health-and-social-services/ontarios-homelessness-crisis-backgrounder
+[DOCLING CONVERTER] Generating layout-preserved structural markdown...
+[HTML-RAG FETCH & CONVERT] (8/10) Processing: https://www.oacas.org/2018/01/child-and-youth-mental-health-needs-in-ontario-are-not-being-met/
+[DOCLING CONVERTER] Generating layout-preserved structural markdown...
+[HTML-RAG FETCH & CONVERT] (9/10) Processing: https://www.dcontario.org/indigenous-youth-mental-health/
+[DOCLING CONVERTER] Generating layout-preserved structural markdown...
+[HTML-RAG FETCH & CONVERT] (10/10) Processing: https://everwellcounselling.ca/blog-counselling-psychotherapy-mental-health/is-therapy-covered-by-ohip
+[DOCLING CONVERTER] Generating layout-preserved structural markdown...
+[HTML-RAG COMPILATION] Aggregated markdown context footprint length: 117627 characters.
+
+[HTML-RAG INFERENCE] Executing single-turn extraction via schema context map...
+[HTML-RAG INFERENCE SUCCESS] Extracted 12 tabular elements.
+
+[SUMMARY FOR HTML-RAG Community Mental Health]:
+  - Total Raw Records Extracted: 12
+  - Unique Entity Matches: 12
+  - Output Target Path Location: /Users/s1mankhan/Desktop/Hex/evaluation_results/html_rag_baseline_mental_health.json
+
+==================================================
+[RUNNING HTML-RAG] Task Category: Addiction treatment
+==================================================
+
+[HTML-RAG DISCOVERY] Issuing search for macro query: 'Retrieve all addiction treatment centres in the Ontario.'
+[HTML-RAG DISCOVERY] Found 10 target candidate URLs.
+[HTML-RAG FETCH & CONVERT] (1/10) Processing: http://www.ontario.ca/page/mental-health-services
+[DOCLING CONVERTER] Generating layout-preserved structural markdown...
+[HTML-RAG FETCH & CONVERT] (2/10) Processing: https://canatc.ca/
+[DOCLING CONVERTER] Generating layout-preserved structural markdown...
+[HTML-RAG FETCH & CONVERT] (3/10) Processing: https://andybhatti.com/interventions/addiction-treatment-centers-ontario/
+[HTML-RAG WARNING] Failed to convert URL https://andybhatti.com/interventions/addiction-treatment-centers-ontario/: 403 Client Error: Forbidden for url: https://andybhatti.com/interventions/addiction-treatment-centers-ontario/
+[HTML-RAG FETCH & CONVERT] (4/10) Processing: https://connexontario.ca/?utm_source=link.cep.health
+[HTML-RAG WARNING] Failed to convert URL https://connexontario.ca/?utm_source=link.cep.health: 403 Client Error: Forbidden for url: https://connexontario.ca/?utm_source=link.cep.health
+[HTML-RAG FETCH & CONVERT] (5/10) Processing: https://recovery.com/ontario/
+[DOCLING CONVERTER] Generating layout-preserved structural markdown...
+[HTML-RAG FETCH & CONVERT] (6/10) Processing: https://www.edgewoodhealthnetwork.com/resources/blog/how-much-does-rehab-cost-in-ontario-canada/
+[DOCLING CONVERTER] Generating layout-preserved structural markdown...
+[HTML-RAG FETCH & CONVERT] (7/10) Processing: https://newgate180.com/
+[DOCLING CONVERTER] Generating layout-preserved structural markdown...
+[HTML-RAG FETCH & CONVERT] (8/10) Processing: https://addictionrehabcenters.ca/ontario-rehabs/
+[DOCLING CONVERTER] Generating layout-preserved structural markdown...
+[HTML-RAG FETCH & CONVERT] (9/10) Processing: https://metamorphosiscentre.com/costs-of-private-addiction-treatment-in-ontario/
+[DOCLING CONVERTER] Generating layout-preserved structural markdown...
+[HTML-RAG FETCH & CONVERT] (10/10) Processing: https://canadiancentreforaddictions.org/
+[DOCLING CONVERTER] Generating layout-preserved structural markdown...
+[HTML-RAG COMPILATION] Aggregated markdown context footprint length: 198309 characters.
+
+[HTML-RAG INFERENCE] Executing single-turn extraction via schema context map...
+[HTML-RAG INFERENCE SUCCESS] Extracted 18 tabular elements.
+
+[SUMMARY FOR HTML-RAG Addiction treatment]:
+  - Total Raw Records Extracted: 18
+  - Unique Entity Matches: 18
+  - Output Target Path Location: /Users/s1mankhan/Desktop/Hex/evaluation_results/html_rag_baseline_addiction.json
+
+====== ALL UNIVERSAL HTML-RAG EVALUATION BATCH RUNS COMPLETE ======

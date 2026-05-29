@@ -1,0 +1,16 @@
+Retrieval-Augmented Generation Context: {raw_markdown_content}
+
+RAG Query: {task_query}
+
+Instructions:
+1. Synthesize the provided Retrieval-Augmented Generation context.
+2. Extract all rows satisfying the RAG Query into a JSON array using this schema:
+[
+  {{
+    "entity_name": "Name of the facility or branch",
+    "location": "City, township, region, or address",
+    "description": "Summary of services provided",
+    "contact_info": "Phone numbers, emails, or links"
+  }}
+]
+3. Output raw JSON text only. Do not include markdown code block syntax or text narratives.

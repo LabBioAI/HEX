@@ -1,0 +1,9 @@
+llm:
+  model_name: "gpt-4o-mini"
+  temperature: 0.0
+
+tools:
+  search_max_results: 10
+
+paths:
+  prompt_file: "prompt_text.txt"
