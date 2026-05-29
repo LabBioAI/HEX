@@ -1,0 +1,14 @@
+llm:
+  model_name: "gpt-4o-mini"
+  temperature: 0.0
+
+tools:
+  search_max_results: 10
+  relevance_threshold: 0.5
+  top_k_feedback_terms: 5
+
+paths:
+  initial_rewrite_prompt: "prf_initial_rewrite_prompt.txt"
+  judge_prompt: "prf_judge_prompt.txt"
+  feedback_rewrite_prompt: "prf_feedback_rewrite_prompt.txt"
+  reader_prompt: "prf_reader_prompt.txt"
