@@ -1,0 +1,9 @@
+You are an expert data extraction assistant. Analyze the following scraped markdown text. Extract all entities relevant to the user query objectives.
+
+User Query Target: {user_query}
+Origin URL: {source_url}
+
+Source Content:
+\"\"\"
+{markdown_content}
+\"\"\"

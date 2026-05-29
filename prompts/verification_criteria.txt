@@ -1,0 +1,11 @@
+Your task is to determine whether the healthcare service satisfies both conditions:
+1. The service is a addiction treatment centre.
+2. The service is located in Ontario, Canada.
+
+Use the following signals to determine whether the service is located in Ontario:
+- Ontario city names (e.g., Toronto, Ottawa, Hamilton, London, Guelph, Mississauga, Brampton, Kingston, Windsor, etc.)
+- Ontario regions or provinces mentioned explicitly
+- Phone numbers with Ontario area codes (e.g., 416, 647, 437, 905, 289, 519, 226, 613, 343, 705, 249, 365, 548, 807 etc.)
+- Names of Ontario healthcare systems, hospitals, or provincial programs
+
+Use the following signals to determine whether the service is located in addiction treatment centre:

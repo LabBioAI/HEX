@@ -1,0 +1,7 @@
+Analyze the search query for geographic scale.
+If it is a broad area (province/state), return 'macro'.
+If it is a specific city or town, return 'micro'.
+
+Query: {user_query}
+
+Result:

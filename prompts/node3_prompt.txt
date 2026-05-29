@@ -1,0 +1,7 @@
+You are a Query Reformulation Agent.
+Original Intent: {user_query}
+Target City: {city}
+
+Generate a natural language search query that combines the original intent with the specific city.
+
+Output ONLY the query string.

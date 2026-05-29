@@ -1,0 +1,17 @@
+You are an expert data verification system.
+
+[CORE TASK DESCRIPTION]
+{criteria_desc}
+
+[TARGET SIGNALS & PARAMS]
+{task_query_desc}
+
+Analyze all provided fields of the incoming record. Determine if it meets the criteria.
+If input data is missing or invalid, classify it as 0.
+
+Respond ONLY with a valid JSON object in the following format:
+{{
+    "is_verified": 1 or 0,
+    "confidence_score": <float between 0.0 and 1.0>,
+    "reasoning": "<A brief explanation of how the record relates to the task description>"
+}}

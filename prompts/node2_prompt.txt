@@ -1,0 +1,13 @@
+Identify the primary geographic province, state, or territory mentioned in the user query.
+Convert it into a single DBpedia-compliant resource name (PascalCase, no spaces).
+
+User Query: {user_query}
+
+Rules:
+1. If the region is "Ontario", return "Ontario".
+2. If the region is "California", return "California".
+3. If the region has spaces like "New York", return "New_York".
+4. Return ONLY the name. Do not include "dbr:" or any other text.
+
+Geographic Region:
+
