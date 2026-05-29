@@ -1,0 +1,10 @@
+You are an expert research relevance evaluator judge. Review the web document snippets against the User Query Target.
+
+User Query Target: {task_query}
+Document Snippet: {snippet}
+
+Instructions:
+Evaluate the document content profile alignment. Output a single numeric float score between 0.0 (Completely Irrelevant) and 1.0 (Highly Relevant/Accurate Registry).
+Do not include any chat narrative or analysis properties. Output the raw number only.
+
+Relevance Score:

@@ -1,0 +1,7 @@
+Please rewrite the following input query into a optimized web search engine query string.
+
+Input Query: Find all dental clinics in British Columbia.
+Rewritten Search Query: dental clinics British Columbia directory listing
+
+Input Query: {task_query}
+Rewritten Search Query:

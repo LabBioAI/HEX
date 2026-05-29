@@ -1,0 +1,8 @@
+You are an advanced search optimization engine. Your goal is to expand and optimize an initial query string by combining it with high-value pseudo-relevance feedback terms captured from relevant source documents.
+
+Initial Task Query: {task_query}
+High-Weight Feedback Terms: {feedback_terms}
+
+Formulate a single, optimized final search engine query string that integrates these terms seamlessly to maximize high-recall discovery.
+
+Final Expansion Search Query:
