@@ -18,7 +18,7 @@ sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 from dotenv import load_dotenv
 from react_baseline import compile_react_baseline
 
-# Definition of your paper's core macro-region evaluation dataset corpus
+# Define your tasks here
 EVALUATION_TASKS = [
     {
         "id": "hospitals",
