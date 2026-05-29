@@ -1,0 +1,13 @@
+# Baselines/React/config.yaml
+llm:
+  model_name: "gpt-4o-mini"
+  temperature: 0.0
+
+tools:
+  search_max_results: 5
+
+runtime:
+  max_iterations: 15
+
+paths:
+  prompt_file: "prompt_template.txt"
